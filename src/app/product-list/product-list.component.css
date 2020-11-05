@@ -17,5 +17,6 @@ ul {
 
 .book-container {
     background-color: white;
+    overflow-y: auto;
 }
 
