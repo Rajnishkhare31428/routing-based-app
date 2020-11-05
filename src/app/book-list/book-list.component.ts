@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class BookListComponent implements OnInit {
 
   constructor(private router:Router) { 
-
+    
   }
 
   ngOnInit(): void {
