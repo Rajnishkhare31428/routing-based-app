@@ -1,7 +1,8 @@
 p {
     font-weight: bold;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: blue;
+    color: darkblue;
+    margin-top: -5px;
 }
 
 ul {
@@ -9,11 +10,12 @@ ul {
     flex-direction: column;
 }
 .singlebook-container {
-    background-color: white;
-    margin: 5px 5px 5px 5px;
+    background-color: lightgray;
+    margin-top: 30px;
     border: 1px solid darkblue;
 }
 
 .book-container {
     background-color: white;
 }
+

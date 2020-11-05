@@ -3,9 +3,9 @@
     <ul *ngIf="books">
         <li *ngFor = "let book of books">
             <div class="singlebook-container">
-                <p class="name">Book Name: {{ book.book }} </p>
-                <p class="author">Book Author: {{ book.author }} </p>
-                <p class="price">Book Price: {{ book.price }} </p>                
+                <p class="name">{{ book.book }}</p>
+                <p class="author">{{ book.author }}</p>
+                <p class="price">{{ book.price }}</p>
             </div>
         </li>
     </ul>    
