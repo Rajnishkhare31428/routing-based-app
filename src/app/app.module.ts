@@ -4,7 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { BookListComponent } from './book-list/book-list.component';
 import { FormsModule } from '@angular/forms';
-import { ProductListComponent } from './product-list/product-list.component'
+import { ProductListComponent } from './product-list/product-list.component';
+import { HomeComponent } from './home/home.component'
 
 
 const appRoutes: Routes = [
@@ -16,7 +17,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     BookListComponent,
-    ProductListComponent
+    ProductListComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
