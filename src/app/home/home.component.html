@@ -1,1 +1,19 @@
-<p>home works!</p>
+<h1>Welcome to My First Angular App</h1>
+<div class="play-container">
+    <p>You've clicked <span (click) = "clickCount()">this</span > {{ clickCounter }} times</p>
+</div>
+<div class="play-container">
+    <p>
+        <input type="text" [(ngModel)] = "name">
+        <br>
+        <strong>You said: </strong> {{ name }}
+    </p>
+</div>
+<div class="play-container" [ngClass] = "setClasses()">
+    <ng-template [ngIf] = "clickCounter > 10" [ngIfElse] = "none"> 
+        <h4>your click counter is greater than 10</h4>
+    </ng-template>
+    <ng-template #none>
+        <h4>your click counter is less than or equal to 10</h4>
+    </ng-template>
+</div>

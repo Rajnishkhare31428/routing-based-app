@@ -1,19 +1,21 @@
 import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { HttpService } from '../http.service';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-
-  constructor(private router:Router) { }
+  private router:Router
+  books: Object;
+  constructor(private _http: HttpService) { }
 
   ngOnInit(): void {
-  }
-  gohome() {
-    this.router.navigateByUrl('');
+    this._http.getBeer().subscribe(data => {
+      this.books = data;
+      console.log(data);
+    });
   }
 }

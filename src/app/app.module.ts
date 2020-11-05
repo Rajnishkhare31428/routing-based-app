@@ -6,11 +6,10 @@ import { BookListComponent } from './book-list/book-list.component';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './home/home.component'
-
-
+import { HttpClientModule } from '@angular/common/http';
 const appRoutes: Routes = [
-  { path: ''  , component: BookListComponent },
-  { path: 'products'  , component: ProductListComponent },
+  { path: ''  , component: HomeComponent },
+  { path: 'list'  , component: ProductListComponent },
 ];
 
 @NgModule({
@@ -22,7 +21,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
