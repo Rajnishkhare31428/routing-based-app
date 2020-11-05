@@ -1,1 +1,10 @@
 <h1>All Books</h1>
+<div class="book-container">
+    <ul *ngIf="books">
+        <li *ngFor = "let book of books">
+            <p class="name"> {{ book.book }} </p>
+            <p class="author"> {{ book.author }} </p>
+            <p class="price"> {{ book.price }} </p>
+        </li>
+    </ul>    
+</div>

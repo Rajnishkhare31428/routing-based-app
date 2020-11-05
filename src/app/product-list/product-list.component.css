@@ -1,0 +1,10 @@
+p {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: blue;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+}
