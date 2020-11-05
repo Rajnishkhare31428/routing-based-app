@@ -2,9 +2,11 @@
 <div class="book-container">
     <ul *ngIf="books">
         <li *ngFor = "let book of books">
-            <p class="name"> {{ book.book }} </p>
-            <p class="author"> {{ book.author }} </p>
-            <p class="price"> {{ book.price }} </p>
+            <div class="singlebook-container">
+                <p class="name">Book Name: {{ book.book }} </p>
+                <p class="author">Book Author: {{ book.author }} </p>
+                <p class="price">Book Price: {{ book.price }} </p>                
+            </div>
         </li>
     </ul>    
 </div>

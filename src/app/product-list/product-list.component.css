@@ -8,3 +8,12 @@ ul {
     display: flex;
     flex-direction: column;
 }
+.singlebook-container {
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+    border: 1px solid darkblue;
+}
+
+.book-container {
+    background-color: white;
+}
